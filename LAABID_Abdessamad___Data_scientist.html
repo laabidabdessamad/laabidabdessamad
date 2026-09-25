@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LAABID Abdessamad — Data scientist</title>
+<meta name="description" content="Data scientist. Master in Data Science and Analytics, Cadi Ayyad University (July 2026). Projects in credit risk, insurance claims and trading-signal deep learning.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#e8edf0;--ink:#12202b;--mute:#566573;--card:#f7f9fa;--line:#c9d3da;--ok:#12866a;--bad:#e0452b;--acc:#2440e8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1a22;--ink:#e6edf2;--mute:#93a4b1;--card:#16242e;--line:#2a3d4a;--ok:#3ecf9f;--bad:#ff6b4f;--acc:#8b9cff}}
+:root[data-theme="dark"]{--bg:#0f1a22;--ink:#e6edf2;--mute:#93a4b1;--card:#16242e;--line:#2a3d4a;--ok:#3ecf9f;--bad:#ff6b4f;--acc:#8b9cff}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Instrument Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","Instrument Sans",system-ui,sans-serif;line-height:1.05;margin:0}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+.brand{font:800 19px "Bricolage Grotesque",sans-serif;text-decoration:none;color:var(--ink)}
+.links{display:flex;gap:6px;align-items:center}
+.links a{color:var(--mute);text-decoration:none;padding:6px 12px;border-radius:999px;transition:background .2s,color .2s}
+.links a:hover{color:var(--ink)}
+.links a.on{background:var(--ink);color:var(--bg)}
+#theme{background:none;border:1.5px solid var(--line);color:var(--ink);border-radius:999px;width:34px;height:34px;cursor:pointer;margin-left:6px;font-size:15px}
+section.blk{padding:72px 0;border-top:1px solid var(--line)}
+#home{border-top:0;padding-top:56px}
+h1{font-size:clamp(44px,8vw,92px);font-weight:800;letter-spacing:-.03em}
+.role{font:500 clamp(20px,3vw,30px) "Bricolage Grotesque",sans-serif;color:var(--acc);margin:10px 0 18px}
+.sum{color:var(--mute);max-width:38em;margin:0 0 26px}
+.acts{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-block;padding:10px 18px;border-radius:999px;background:var(--ink);color:var(--bg);text-decoration:none;font:600 15px "Instrument Sans",sans-serif;border:1.5px solid var(--ink);cursor:pointer;transition:transform .15s,background .2s}
+.btn.alt{background:transparent;color:var(--ink)}
+.btn:hover{background:var(--acc);color:#fff;border-color:var(--acc);transform:translateY(-2px)}
+.edu-card{display:grid;grid-template-columns:150px 1fr;gap:28px;padding:30px;border:1.5px solid var(--line);border-radius:22px;background:var(--card)}
+.when{font:800 28px/1.1 "Bricolage Grotesque",sans-serif}
+.when small{display:block;font:400 13px "Instrument Sans",sans-serif;color:var(--mute);margin-top:6px}
+.edu-card h3{font-size:clamp(24px,3.4vw,34px);font-weight:800;letter-spacing:-.02em;margin-bottom:6px}
+.edu-card p{margin:0 0 10px;color:var(--mute)}
+.edu-card .where{color:var(--acc);font-weight:600}
+.edu-card a{color:var(--ink)}
+h2.sh{font-size:clamp(32px,4.6vw,52px);font-weight:800;letter-spacing:-.02em;margin-bottom:10px}
+.hint{color:var(--mute);margin:0 0 26px;max-width:38em}
+.grp{margin:0 0 18px}
+.grp h3{font:600 15px "Instrument Sans",sans-serif;color:var(--mute);margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:400 15px "Instrument Sans",sans-serif;background:var(--card);color:var(--ink);border:1.5px solid var(--line);border-radius:999px;padding:6px 14px;cursor:pointer;transition:all .18s}
+.chip:hover{border-color:var(--acc);transform:translateY(-2px)}
+.chip[aria-pressed=true]{background:var(--acc);border-color:var(--acc);color:#fff}
+.status{min-height:28px;margin-top:6px;color:var(--ink);font-weight:600}
+.proj{display:grid;grid-template-columns:1fr 1.05fr;gap:40px;align-items:start;padding:34px;margin:0 0 26px;border:1.5px solid var(--line);border-radius:22px;transition:opacity .3s,border-color .3s,box-shadow .3s}
+.proj.dim{opacity:.35}
+.proj.match{border-color:var(--acc);box-shadow:0 0 0 4px color-mix(in srgb,var(--acc) 18%,transparent)}
+.proj h3{font-size:clamp(28px,4vw,42px);font-weight:800;letter-spacing:-.02em;margin-bottom:12px}
+.proj p{color:var(--mute);margin:0 0 12px}
+.kick{font-size:13px;color:var(--acc);font-weight:600;letter-spacing:.02em;margin:0 0 8px}
+.stats{display:flex;flex-wrap:wrap;gap:8px 26px;margin:16px 0}
+.stats div{min-width:0}
+.stats dt{font-size:12px;color:var(--mute)}
+.stats dd{margin:0;font:800 24px/1.15 "Bricolage Grotesque",sans-serif;letter-spacing:-.01em}
+.stats dd small{font:400 12px "Instrument Sans",sans-serif;color:var(--mute);letter-spacing:0}
+.caveat{border-left:3px solid var(--bad);padding:2px 0 2px 14px;margin:0 0 14px;font-size:15px}
+details{border-top:1px solid var(--line);padding:10px 0;margin-bottom:16px}
+summary{cursor:pointer;font-weight:600}
+details ul{padding-left:18px;margin:10px 0 0;color:var(--mute)}
+details li{margin:6px 0}
+.viz{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+.viz h4{font:500 16px "Bricolage Grotesque",sans-serif;color:var(--mute);margin:0 0 14px}
+.row{display:grid;grid-template-columns:130px 1fr;gap:12px;align-items:center;margin:9px 0;font-size:14px}
+.bar.a{background:var(--acc)}
+.bar{height:20px;border-radius:4px;background:var(--bad);width:0;transition:width 1.1s cubic-bezier(.2,.8,.2,1)}
+.bar.g{background:var(--ok)}
+.go .bar{width:var(--w)}
+.flow{display:flex;flex-direction:column;gap:8px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.node{text-align:left;font:600 14px "Instrument Sans",sans-serif;color:var(--ink);background:transparent;border:1.5px solid var(--line);border-radius:12px;padding:11px 14px;cursor:pointer;transition:all .2s}
+.node:hover{border-color:var(--acc)}
+.node[aria-pressed=true]{background:var(--acc);border-color:var(--acc);color:#fff}
+.tabs{display:flex;gap:6px;margin:0 0 14px;flex-wrap:wrap}
+.tabs button{font:600 13px "Instrument Sans",sans-serif;background:transparent;color:var(--ink);border:1.5px solid var(--line);border-radius:999px;padding:4px 12px;cursor:pointer}
+.tabs button[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.cv{width:100%;height:auto;display:block;color:var(--ink)}
+.ex{display:grid;grid-template-columns:62px repeat(3,1fr);gap:4px 12px;font-size:13px;align-items:center}
+.ex .h{color:var(--mute);font-size:12px}
+.ex i{display:block;height:8px;border-radius:3px;background:var(--acc);transition:width .5s}
+.ex i.w{background:var(--bad)}
+.ex span{display:block;color:var(--mute);font-size:12px;margin-bottom:9px}
+.cap{min-height:44px;font-size:14px;color:var(--mute);margin-top:10px}
+.social{display:flex;gap:14px;margin-top:10px}
+.mail{margin:14px 0 0;font-size:16px}.mail a{color:var(--ink)}
+.social a{width:58px;height:58px;border-radius:50%;border:1.5px solid var(--ink);display:grid;place-items:center;color:var(--ink);transition:all .2s}
+.social a:hover{background:var(--acc);border-color:var(--acc);color:#fff;transform:translateY(-4px) rotate(-6deg)}
+.social svg{width:26px;height:26px;fill:currentColor}
+footer{border-top:1px solid var(--line);padding:26px 0 48px;color:var(--mute);font-size:14px}
+@media (max-width:820px){.edu-card{grid-template-columns:1fr;gap:12px;padding:22px}.proj{grid-template-columns:1fr;gap:24px;padding:22px}.row{grid-template-columns:100px 1fr}.links a{padding:6px 8px;font-size:15px}.brand{display:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.go .bar{width:var(--w)}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="#home">LAABID Abdessamad</a>
+<nav class="links" aria-label="Main"><a href="#home" class="on">Home</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#projects">Projects</a><a href="#contact">Contact</a><button id="theme" type="button" aria-label="Toggle light and dark theme">◐</button></nav>
+</div></header>
+
+<main class="wrap">
+<section class="blk" id="home">
+<h1>LAABID Abdessamad</h1>
+<div class="role">Data scientist</div>
+<p class="sum">Recent Data Science graduate with a Master’s degree and a solid foundation in machine learning and deep learning. Through academic and personal projects, I have developed practical knowledge of Python, scikit-learn, XGBoost, neural networks, CNNs, RNNs, and LSTMs, as well as ML application development and deployment using tools such as FastAPI, Docker, AWS, and CI/CD. I am ready to collaborate with data science and machine learning teams, contribute to real-world projects, learn from experienced professionals, and continue developing my technical skills in a professional environment.</p>
+<div class="acts"><a class="btn" href="laabidabdessamad_resume.pdf" download>Download resume</a><a class="btn alt" href="#projects">See projects</a></div>
+</section>
+
+<section class="blk" id="education">
+<h2 class="sh">Education</h2>
+<div class="edu-card">
+<div class="when">July 2026<small>Graduated</small></div>
+<div><h3>Master in Data Science and Analytics</h3>
+<p class="where">Cadi Ayyad University</p>
+<p>Thesis: “A Multi-Asset Deep Learning Architecture for Continuous Trading Signal Prediction”, supervised by Professor Essalih Mohamed.</p></div>
+</div>
+</section>
+
+<section class="blk" id="skills">
+<h2 class="sh">Skills</h2>
+<p class="hint">Tap a skill to see which project uses it.</p>
+<div id="chips"></div>
+<div class="status" id="status" aria-live="polite"></div>
+</section>
+
+<section class="blk" id="projects">
+<h2 class="sh">Projects</h2>
+
+<article class="proj" id="p-t">
+<div>
+<p class="kick">Master's thesis · deep learning, time series</p>
+<h3>Trading signals across 70 stocks</h3>
+<p>One shared network labels every daily bar of 70 NASDAQ-100 stocks as buy, hold or sell. I trained 8 architectures under 5 class-imbalance settings (41 runs) and scored them on F1 and on Sharpe ratio, because the two turned out to disagree.</p>
+<dl class="stats"><div><dt>Best composite rank</dt><dd>TCN</dd></div><div><dt>Best Sharpe</dt><dd>0.385 <small>TFT + T-SMOTE</small></dd></div><div><dt>Best F1</dt><dd>0.512 <small>TFT + WCE</small></dd></div></dl>
+<p class="caveat">The weighting that maximized F1 also multiplied trades by 4 to 8 and gave the worst Sharpe. One model's 70.3% accuracy was just "always predict Hold". And CDT-CNN's convolutions could see future bars: a causal rewrite cut its F1 by 0.054 on average.</p>
+<details><summary>How it was set up</summary><ul>
+<li>Labels come from a zigzag rule: a buy or sell only where price reverses by at least 1%, so Hold is about 70% of bars</li>
+<li>Inputs are OHLCV plus TA-Lib indicators; Ichimoku's lagging span is left out to avoid look-ahead</li>
+<li>Same test year for every model (July 2025 to June 2026). Sharpe ignores transaction costs, so treat the ranking as suggestive</li>
+<li>Supervised by Prof. Essalih Mohamed, 2025–2026</li></ul></details>
+</div>
+<div class="viz"><h4>Same model, five imbalance settings</h4>
+<div class="tabs" id="tm"></div><div class="ex" id="ex"></div><div class="cap" id="excap"></div></div>
+</article>
+
+<article class="proj" id="p-c">
+<div>
+<p class="kick">Personal project · credit risk</p>
+<h3>CreditLens</h3>
+<p>A lender loses much more on one bad loan than on one refused good customer (5 to 1 on the standard cost matrix), so I tuned for expected cost instead of accuracy. Built on the 1,000-row German Credit dataset.</p>
+<dl class="stats"><div><dt>Test ROC-AUC</dt><dd>0.76 <small>CI 0.68–0.83</small></dd></div><div><dt>Cost per applicant</dt><dd>0.645 <small>vs 0.70 declining all</small></dd></div></dl>
+<p class="caveat">The saving over declining everyone is 5.5%, but its 95% interval runs from −9.5% to +19%, so I can't claim the model beats that simple policy on 200 test applicants. The app shows the interval.</p>
+<details><summary>How it works</summary><ul>
+<li>Probabilities are calibrated, and the 13% cut-off was picked on out-of-fold predictions</li>
+<li>One saved model object serves training, tests and the API</li>
+<li>Sex and age are not inputs and the API rejects them, though the audit still found age disparity coming through other features</li>
+<li>Pandera checks the data, Evidently checks drift, DVC and MLflow track runs</li></ul></details>
+<div class="acts"><a class="btn" href="https://creditlens-demo.streamlit.app/" target="_blank" rel="noopener">Open live demo</a><a class="btn alt" href="https://github.com/laabidabdessamad/creditlens" target="_blank" rel="noopener">GitHub</a></div>
+</div>
+<div class="viz reveal"><h4>Out-of-fold predictions, 800 applicants</h4>
+<div class="tabs" id="tc"></div><div id="cvbox"></div><div class="cap" id="ccap"></div></div>
+</article>
+
+<article class="proj" id="p-i">
+<div>
+<p class="kick">Personal project · classification, regression, AWS</p>
+<h3>Car insurance claim risk</h3>
+<p>I started from a notebook that fit its preprocessing before splitting the data, which leaks the test set. I rebuilt it as two sklearn pipelines and put them behind a FastAPI service on AWS: will this driver file a claim, and how large would it be.</p>
+<dl class="stats"><div><dt>Claim classifier ROC-AUC</dt><dd>0.82</dd></div><div><dt>PR-AUC</dt><dd>0.64 <small>27% of drivers claim</small></dd></div></dl>
+<p class="caveat">Claim size is the weak half. The regressor doesn't beat predicting the average claim ($8,381 RMSE against $8,285), so the classifier carries this project.</p>
+<details><summary>How it works</summary><ul>
+<li>Imputing, scaling and encoding live inside each pipeline and are fit on the training split only</li>
+<li>CDK defines the infrastructure (Fargate, load balancer, S3) and GitHub Actions is the only way it gets deployed</li>
+<li>Terraform creates the GitHub OIDC role, so no AWS keys sit in the repo</li></ul></details>
+<div class="acts"><a class="btn" href="https://claim-risk-demo.streamlit.app/" target="_blank" rel="noopener">Open live demo</a><a class="btn alt" href="https://github.com/laabidabdessamad/insurance-claim-ml-pipeline" target="_blank" rel="noopener">GitHub</a></div>
+</div>
+<div class="viz"><h4>Tap a step</h4>
+<div class="tabs" id="ti"></div><div class="flow" id="flow"></div><div class="cap" id="cap"></div></div>
+</article>
+</section>
+
+<section class="blk" id="contact">
+<h2 class="sh">Contact</h2>
+<p class="hint">Open to data science roles. Email is the easiest way to reach me.</p>
+<div class="social">
+<a href="mailto:i.laabidabdessamad@gmail.com" aria-label="Email (Gmail)"><svg viewBox="0 0 24 24"><path d="M3 5h1.6L12 10.6 19.4 5H21a1 1 0 011 1v12a1 1 0 01-1 1h-3V9.9l-6 4.5-6-4.5V19H3a1 1 0 01-1-1V6a1 1 0 011-1z"/></svg></a>
+<a href="https://www.linkedin.com/in/laabidabdessamad/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4 3h16a1 1 0 011 1v16a1 1 0 01-1 1H4a1 1 0 01-1-1V4a1 1 0 011-1zm2.6 6.3v8.4h2.7V9.3H6.6zm1.35-3.9a1.55 1.55 0 100 3.1 1.55 1.55 0 000-3.1zM11 9.3v8.4h2.7v-4.4c0-1.2.5-1.9 1.4-1.9.9 0 1.3.6 1.3 1.9v4.4h2.7v-5c0-2.2-1.2-3.5-3-3.5-1.1 0-1.9.5-2.4 1.3V9.3H11z" fill-rule="evenodd"/></svg></a>
+<a href="https://github.com/laabidabdessamad" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+</div>
+<p class="mail"><a href="mailto:i.laabidabdessamad@gmail.com">i.laabidabdessamad@gmail.com</a></p>
+</section>
+</main>
+<footer><div class="wrap">© 2026 LAABID Abdessamad · Master in Data Science and Analytics, Cadi Ayyad University</div></footer>
+
+<script>
+(function(){
+var $=function(i){return document.getElementById(i)};
+function tabs(box,names,cb){box.innerHTML='';names.forEach(function(n,i){var b=document.createElement('button');b.type='button';b.textContent=n;b.setAttribute('aria-pressed',i?'false':'true');
+b.addEventListener('click',function(){box.querySelectorAll('button').forEach(function(o){o.setAttribute('aria-pressed','false')});b.setAttribute('aria-pressed','true');cb(i)});box.appendChild(b)});cb(0)}
+
+/* Thesis explorer: values from thesis tables 4.3, 4.4, 4.6 (order: No fix, WCE, CSMOTE, CCL, TSMOTE) */
+var CF=['No fix','WCE','CSMOTE','CCL','T-SMOTE'];
+var M={LSTM:{f:[.377,.506,.403,.367,.471],s:[.311,.140,.286,.266,.250],t:[1921,12759,2517,1662,4601]},
+TCN:{f:[.391,.507,.413,.395,.501],s:[.321,.145,.244,.344,.327],t:[1789,11783,2372,1806,6008]},
+TFT:{f:[.400,.512,.417,.376,.487],s:[.218,.176,.253,.118,.385],t:[2356,12633,3011,1867,7198]},
+'N-BEATS':{f:[.486,.491,.481,.452,.476],s:[.314,.272,.288,.213,.243],t:[5626,6432,6048,3665,5626]}};
+function arg(a){var k=0;a.forEach(function(v,i){if(v>a[k])k=i});return k}
+function ex(name){var m=M[name],h='<span class="h"></span><span class="h">Macro-F1</span><span class="h">Sharpe</span><span class="h">Trades</span>';
+CF.forEach(function(c,i){h+='<b style="font-weight:600">'+c+'</b>'+
+'<div><i style="width:'+(m.f[i]/.55*100)+'%"></i><span>'+m.f[i].toFixed(3)+'</span></div>'+
+'<div><i style="width:'+(m.s[i]/.4*100)+'%"></i><span>'+m.s[i].toFixed(3)+'</span></div>'+
+'<div><i class="'+(i==1&&m.t[1]>m.t[0]*3?'w':'')+'" style="width:'+(m.t[i]/13500*100)+'%"></i><span>'+m.t[i].toLocaleString('en-US')+'</span></div>'});
+$('ex').innerHTML=h;
+$('excap').textContent='Best F1: '+CF[arg(m.f)]+' ('+m.f[arg(m.f)].toFixed(3)+'). Best Sharpe: '+CF[arg(m.s)]+' ('+m.s[arg(m.s)].toFixed(3)+'). WCE trades '+(m.t[1]/m.t[0]).toFixed(1)+'× as often as No fix. Trades are pooled over 16,940 test bars.'}
+var mn=Object.keys(M);tabs($('tm'),mn,function(i){ex(mn[i])});
+
+/* CreditLens: cost curve recomputed from reports/oof_train.csv (5 per missed default, 1 per refused good applicant) */
+var CS=[.699,.69,.664,.628,.589,.568,.551,.579,.576,.568,.571,.585,.58,.601,.609,.629,.636,.669,.694,.74,.771,.808,.825,.859,.985,1.029,1.06,1.116,1.159,1.204,1.26,1.32,1.382,1.416,1.445,1.452,1.46,1.484,1.495,1.5];
+var IM=[['Checking account',.671],['Loan duration',.371],['Monthly payment',.296],['Credit amount (log)',.282],['Savings account',.249],['Housing',.181],['Purpose',.166],['Job',.019]];
+function X(t){return 34+(t-.02)/.78*278}function Y(c){return 146-(c-.5)/1.05*136}
+function cvw(i){var b=$('cvbox');
+if(i==0){var g='';[.5,1,1.5].forEach(function(v){g+='<line x1="34" x2="312" y1="'+Y(v)+'" y2="'+Y(v)+'" stroke="currentColor" opacity=".12"/><text x="28" y="'+(Y(v)+3)+'" text-anchor="end" font-size="10" fill="var(--mute)">'+v.toFixed(1)+'</text>'});
+[.2,.4,.6,.8].forEach(function(v){g+='<text x="'+X(v)+'" y="162" text-anchor="middle" font-size="10" fill="var(--mute)">'+v.toFixed(1)+'</text>'});
+var p=CS.map(function(c,k){return (k?'L':'M')+X(.02+k*.02).toFixed(1)+','+Y(c).toFixed(1)}).join('');
+b.innerHTML='<svg class="cv" viewBox="0 0 320 168" role="img" aria-label="Expected cost per applicant against decision threshold">'+g+
+'<line x1="34" x2="312" y1="'+Y(.7)+'" y2="'+Y(.7)+'" stroke="var(--bad)" stroke-dasharray="3 4"/><text x="312" y="'+(Y(.7)-5)+'" text-anchor="end" font-size="10" fill="var(--bad)">decline everyone: 0.70</text>'+
+'<path d="'+p+'" fill="none" stroke="currentColor" stroke-width="2"/>'+
+'<line x1="'+X(.13)+'" x2="'+X(.13)+'" y1="10" y2="146" stroke="var(--acc)"/><circle cx="'+X(.13)+'" cy="'+Y(.56)+'" r="4.5" fill="var(--acc)"/><text x="'+(X(.13)+7)+'" y="20" font-size="10" fill="var(--acc)">threshold 0.13, cost 0.56</text></svg>';
+$('ccap').textContent='Decline an applicant when predicted default risk is above the threshold. At the usual 0.5 the cost is 0.99, worse than refusing everyone.'}
+else{b.innerHTML=IM.map(function(r){return '<div class="row"><span>'+r[0]+'</span><i class="bar a" style="width:0" data-w="'+(r[1]/.671*100)+'%"></i></div>'}).join('');
+requestAnimationFrame(function(){b.querySelectorAll('.bar').forEach(function(e){e.style.width=e.dataset.w})});
+$('ccap').textContent='Mean absolute SHAP value per feature over the training set. Sex and age are not in the model.'}}
+tabs($('tc'),['Cost by threshold','What drives the score'],cvw);
+
+/* Insurance flow */
+var FL=[[['Streamlit form','Policyholder details go into a form. No model runs in the browser.'],['FastAPI on Fargate','A container behind a load balancer in eu-west-3, autoscaling on CPU, with CloudWatch alarms on errors, latency and healthy hosts.'],['Claim classifier','XGBoost pipeline. Returns the probability the policyholder files a claim.'],['Claim-size regressor','Linear model trained with SGD and L2 regularization. Returns an expected claim amount.'],['JSON response','Both numbers go back to the app.']],
+[['Push to main','GitHub Actions runs ruff and pytest first. Pull requests stop after the tests.'],['OIDC role','The runner swaps a short-lived GitHub token for AWS credentials. Terraform created the role, so no access keys are stored.'],['Image to ECR','The Docker image is tagged with the commit SHA.'],['CDK deploy','The ECR stack goes first, then the Fargate stack, which picks up the new image tag.']]];
+tabs($('ti'),['A request','A deploy'],function(k){var f=$('flow');f.innerHTML='';$('cap').textContent='Select a step to see what it does.';
+FL[k].forEach(function(s){var n=document.createElement('button');n.type='button';n.className='node';n.textContent=s[0];n.setAttribute('aria-pressed','false');
+n.addEventListener('click',function(){f.querySelectorAll('.node').forEach(function(o){o.setAttribute('aria-pressed','false')});n.setAttribute('aria-pressed','true');$('cap').textContent=s[1]});f.appendChild(n)})});
+
+/* Skills -> projects (c CreditLens, i insurance, t thesis) */
+var S=[['Modeling',[['Python','cit'],['pandas','cit'],['scikit-learn','ci'],['XGBoost','ci'],['PyTorch and Lightning','t'],['Optuna','ci'],['Class imbalance (SMOTENC, T-SMOTE)','ct'],['Probability calibration','c'],['Time-series classification','t']]],
+['Evaluation and explainability',[['Cost-sensitive decisions','c'],['Sharpe ratio and backtest metrics','t'],['SHAP','ci'],['Fairlearn','c'],['Bootstrap confidence intervals','c']]],
+['Data quality and MLOps',[['Pandera','c'],['DVC','c'],['MLflow','ci'],['Evidently drift monitoring','c'],['pytest','ci'],['GitHub Actions CI/CD','ci']]],
+['Serving and cloud',[['FastAPI','ci'],['Streamlit','ci'],['Docker','ci'],['AWS Fargate','i'],['AWS CDK','i'],['Terraform','i']]]];
+var names={c:'CreditLens',i:'Car insurance claim risk',t:'the thesis'},cards={c:$('p-c'),i:$('p-i'),t:$('p-t')},box=$('chips'),st=$('status'),cur=null,K=['c','i','t'];
+S.forEach(function(g){var d=document.createElement('div');d.className='grp';d.innerHTML='<h3>'+g[0]+'</h3><div class="chips"></div>';
+g[1].forEach(function(x){var b=document.createElement('button');b.type='button';b.className='chip';b.textContent=x[0];b.setAttribute('aria-pressed','false');
+b.addEventListener('click',function(){var on=cur!==b;box.querySelectorAll('.chip').forEach(function(o){o.setAttribute('aria-pressed','false')});cur=on?b:null;
+K.forEach(function(k){cards[k].classList.remove('dim','match')});
+if(on){b.setAttribute('aria-pressed','true');K.forEach(function(k){cards[k].classList.add(x[1].indexOf(k)>-1?'match':'dim')});
+var u=x[1].split('').map(function(k){return names[k]});st.textContent=x[0]+': used in '+u.join(u.length>2?', ':' and ')+'.';
+$('projects').scrollIntoView({behavior:'smooth'})}else st.textContent=''});
+d.lastChild.appendChild(b)});box.appendChild(d)});
+
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('go');io.unobserve(e.target)}})},{threshold:.3});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+var links=document.querySelectorAll('.links a'),so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('section.blk').forEach(function(x){so.observe(x)});
+var root=document.documentElement;
+$('theme').addEventListener('click',function(){var dark=root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;root.dataset.theme=dark?'light':'dark'});
+})();
+</script>
+</body>
+</html>
