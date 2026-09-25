@@ -37,8 +37,8 @@ Rebuilt a leaky notebook (preprocessing fit before the train/test split) into tw
 ### 📊 GitHub stats
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=laabidabdessamad&show_icons=true&theme=default&hide_border=true" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=laabidabdessamad&layout=compact&hide_border=true" />
+  <img height="165" src="https://github-stats-extended.vercel.app/api?username=laabidabdessamad&show_icons=true&theme=default&hide_border=true" />
+  <img height="165" src="https://github-stats-extended.vercel.app/api?username=laabidabdessamad&layout=compact&hide_border=true" />
 </p>
 
 ---
